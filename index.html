@@ -2,292 +2,280 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="NovaPlay: noticias, videojuegos y tecnología en un solo lugar.">
-
-    <title>NovaPlay | Tu universo gamer</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaPlay: videojuegos, tecnología y estilo gamer en un solo universo.">
+  <title>NovaPlay | Tu universo gamer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- NAVEGACIÓN -->
-    <header>
-        <nav class="navbar">
-
-            <a href="#inicio" class="logo">
-                NOVA<span>PLAY</span>
-            </a>
-
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#noticias">Noticias</a></li>
-                <li><a href="#juegos">Videojuegos</a></li>
-                <li><a href="#tecnologia">Tecnología</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- INICIO -->
-        <section class="hero" id="inicio">
-
-            <div class="hero-content">
-
-                <span class="tag">TU UNIVERSO GAMER</span>
-
-                <h1>
-                    EL GAMING<br>
-                    NUNCA SE DETIENE.
-                </h1>
-
-                <p>
-                    Descubre las últimas noticias, novedades
-                    y todo lo que mueve el mundo de los videojuegos
-                    y la tecnología.
-                </p>
-
-                <a href="#noticias" class="btn">
-                    EXPLORAR AHORA
-                </a>
-
-            </div>
-
-        </section>
-
-        <!-- NOTICIAS -->
-        <section class="section" id="noticias">
-
-            <div class="section-title">
-
-                <span>EL MUNDO GAMER EN UN SOLO LUGAR</span>
-
-                <h2>Últimas noticias</h2>
-
-                <p>
-                    Lo que está pasando en el mundo de los
-                    videojuegos y la tecnología.
-                </p>
-
-            </div>
-
-            <div class="news-filters">
-
-                <button class="filter-btn active" data-filter="all">
-                    Todas
-                </button>
-
-                <button class="filter-btn" data-filter="gaming">
-                    Gaming
-                </button>
-
-                <button class="filter-btn" data-filter="videojuegos">
-                    Videojuegos
-                </button>
-
-                <button class="filter-btn" data-filter="tecnologia">
-                    Tecnología
-                </button>
-
-            </div>
-
-            <div class="news-grid">
-
-                <article class="news-card" data-category="gaming">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
-                        alt="Competencia gamer"
-                    >
-
-                    <div class="card-content">
-
-                        <span class="category">GAMING</span>
-
-                        <h3>La comunidad gamer sigue creciendo</h3>
-
-                        <p>
-                            Los videojuegos competitivos siguen
-                            reuniendo jugadores de todo el mundo.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="news-card" data-category="videojuegos">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800"
-                        alt="Consola de videojuegos"
-                    >
-
-                    <div class="card-content">
-
-                        <span class="category">VIDEOJUEGOS</span>
-
-                        <h3>Nuevas experiencias por descubrir</h3>
-
-                        <p>
-                            Cada videojuego ofrece una forma
-                            diferente de explorar y divertirse.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="news-card" data-category="tecnologia">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800"
-                        alt="Innovación tecnológica"
-                    >
-
-                    <div class="card-content">
-
-                        <span class="category">TECNOLOGÍA</span>
-
-                        <h3>Innovación que transforma el futuro</h3>
-
-                        <p>
-                            La tecnología continúa cambiando
-                            nuestra manera de conectarnos.
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-            <p id="noNews" class="empty-message" hidden>
-                No hay noticias en esta categoría.
-            </p>
-
-        </section>
-
-        <!-- VIDEOJUEGOS -->
-        <section class="games-section" id="juegos">
-
-            <span class="tag">DESCUBRE TU PRÓXIMA AVENTURA</span>
-
-            <h2>Explora videojuegos</h2>
-
-            <p>
-                ¿No sabes a qué jugar? Explora algunos de los
-                títulos que están dando de qué hablar.
-            </p>
-
-            <div class="games-tools">
-
-                <input
-                    type="search"
-                    id="gameSearch"
-                    placeholder="Busca tu videojuego favorito..."
-                    aria-label="Buscar videojuegos"
-                >
-
-            </div>
-
-            <div class="games-grid" id="gamesGrid">
-
-                <article class="game-card">
-
-                    <span>AVENTURA</span>
-
-                    <h3>Minecraft</h3>
-
-                    <p>
-                        Construye, explora y crea tu propio mundo.
-                    </p>
-
-                </article>
-
-                <article class="game-card">
-
-                    <span>BATTLE ROYALE</span>
-
-                    <h3>Fortnite</h3>
-
-                    <p>
-                        Compite, construye y busca la victoria.
-                    </p>
-
-                </article>
-
-                <article class="game-card">
-
-                    <span>ACCIÓN</span>
-
-                    <h3>GTA V</h3>
-
-                    <p>
-                        Explora una ciudad llena de posibilidades.
-                    </p>
-
-                </article>
-
-                <article class="game-card">
-
-                    <span>COMPETITIVO</span>
-
-                    <h3>Valorant</h3>
-
-                    <p>
-                        Precisión, estrategia y trabajo en equipo.
-                    </p>
-
-                </article>
-
-            </div>
-
-            <p id="noResults" class="empty-message" hidden>
-                No encontramos ese videojuego. Intenta con otro nombre.
-            </p>
-
-        </section>
-
-        <!-- TECNOLOGÍA -->
-        <section class="tech-section" id="tecnologia">
-
-            <span class="tag">INNOVACIÓN Y FUTURO</span>
-
-            <h2>La tecnología no se detiene.</h2>
-
-            <p>
-                Mantente al día con las tendencias,
-                innovaciones y avances tecnológicos.
-            </p>
-
-        </section>
-
-    </main>
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
-
-        <h2>NOVA<span>PLAY</span></h2>
-
-        <p>Tu universo gamer comienza aquí.</p>
-
-        <p class="copyright">
-            © 2026 NovaPlay. Todos los derechos reservados.
-        </p>
-
-    </footer>
-
-    <!-- CONEXIÓN JAVASCRIPT -->
-    <script src="script.js"></script>
-
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a href="#inicio" class="logo">NOVA<span>PLAY</span></a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#juegos">Videojuegos</a></li>
+        <li><a href="#tienda">Tienda</a></li>
+        <li><a href="#tecnologia">Tecnología</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a class="cart-link" href="#tienda">🛒 <span id="cartCount">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="tag">TU UNIVERSO GAMER</span>
+        <h1>EL GAMING<br><span>NUNCA SE DETIENE.</span></h1>
+        <p>Explora tus videojuegos favoritos, descubre tecnología y encuentra tu próximo estilo gamer.</p>
+        <div class="hero-actions">
+          <a href="#juegos" class="btn">EXPLORAR JUEGOS</a>
+          <a href="#tienda" class="btn btn-outline">ENTRAR A LA TIENDA</a>
+        </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true">N<span>+</span></div>
+    </section>
+
+    <section class="about-section" id="nosotros">
+      <div class="section-heading">
+        <span class="tag">CONOCE NOVAPLAY</span>
+        <h2>Más que videojuegos</h2>
+        <p>Un espacio creado para quienes viven el gaming dentro y fuera de la pantalla.</p>
+      </div>
+      <div class="about-grid">
+        <article class="about-card">
+          <span class="card-icon">🎯</span>
+          <h3>Misión</h3>
+          <p>Conectar a los amantes de los videojuegos y la tecnología mediante una plataforma moderna y útil.</p>
+        </article>
+        <article class="about-card">
+          <span class="card-icon">🚀</span>
+          <h3>Visión</h3>
+          <p>Crecer como una comunidad que comparte novedades, descubre productos y disfruta la cultura gamer.</p>
+        </article>
+        <article class="about-card">
+          <span class="card-icon">⚡</span>
+          <h3>Nuestro lema</h3>
+          <p><strong>NovaPlay: tu universo gaming y tecnológico.</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section news-section" id="noticias">
+      <div class="section-heading">
+        <span class="tag">LO QUE SE MUEVE</span>
+        <h2>Noticias y tendencias</h2>
+        <p>Un vistazo general a las novedades del mundo digital.</p>
+      </div>
+      <article class="news-feature">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1000&auto=format&fit=crop" alt="Equipo trabajando con tecnología" loading="lazy">
+        <div class="news-feature-content">
+          <span class="category">TECNOLOGÍA</span>
+          <h3>La innovación digital sigue transformando nuestra forma de jugar</h3>
+          <p>El desarrollo de dispositivos, experiencias digitales y herramientas tecnológicas continúa abriendo nuevas posibilidades para la comunidad gamer.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="games-section" id="juegos">
+      <div class="section-heading">
+        <span class="tag">DESCUBRE TU PRÓXIMA AVENTURA</span>
+        <h2>Explora videojuegos</h2>
+        <p>Busca un título y conoce sus características.</p>
+      </div>
+      <div class="games-tools">
+        <input type="search" id="gameSearch" placeholder="Busca tu videojuego favorito..." aria-label="Buscar videojuegos">
+      </div>
+      <div class="games-grid" id="gamesGrid">
+
+        <article class="game-card">
+          <span class="game-genre">SUPERVIVENCIA · CONSTRUCCIÓN</span>
+          <h3>Minecraft</h3>
+          <p>Construye, explora y crea tu propio mundo bloque a bloque.</p>
+          <button class="game-info-btn" type="button" aria-expanded="false">Ver información</button>
+          <div class="game-details" hidden>
+            <h4>Información de Minecraft</h4>
+            <p><strong>Género:</strong> Supervivencia y construcción.</p>
+            <p><strong>Experiencia:</strong> Explora mundos generados y reúne recursos para construir.</p>
+            <p><strong>Dato curioso:</strong> Sus mundos se generan de forma procedural.</p>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <span class="game-genre">BATTLE ROYALE</span>
+          <h3>Fortnite</h3>
+          <p>Compite, construye y busca conseguir la victoria.</p>
+          <button class="game-info-btn" type="button" aria-expanded="false">Ver información</button>
+          <div class="game-details" hidden>
+            <h4>Información de Fortnite</h4>
+            <p><strong>Género:</strong> Battle Royale y acción.</p>
+            <p><strong>Experiencia:</strong> Combates, eventos y modos variados.</p>
+            <p><strong>Dato curioso:</strong> También ofrece experiencias creadas por jugadores.</p>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <span class="game-genre">ACCIÓN · MUNDO ABIERTO</span>
+          <h3>GTA V</h3>
+          <p>Explora Los Santos y vive historias desde distintas perspectivas.</p>
+          <button class="game-info-btn" type="button" aria-expanded="false">Ver información</button>
+          <div class="game-details" hidden>
+            <h4>Información de GTA V</h4>
+            <p><strong>Género:</strong> Acción y mundo abierto.</p>
+            <p><strong>Ambientación:</strong> La ciudad ficticia de Los Santos.</p>
+            <p><strong>Dato curioso:</strong> Cuenta con tres protagonistas: Michael, Franklin y Trevor.</p>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <span class="game-genre">SHOOTER TÁCTICO</span>
+          <h3>Valorant</h3>
+          <p>Precisión, estrategia y trabajo en equipo en cada ronda.</p>
+          <button class="game-info-btn" type="button" aria-expanded="false">Ver información</button>
+          <div class="game-details" hidden>
+            <h4>Información de Valorant</h4>
+            <p><strong>Género:</strong> Shooter táctico competitivo.</p>
+            <p><strong>Experiencia:</strong> Equipos se enfrentan en rondas usando armas y habilidades.</p>
+            <p><strong>Dato curioso:</strong> Cada agente tiene habilidades propias.</p>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <span class="game-genre">BATTLE ROYALE · MÓVIL</span>
+          <h3>Free Fire</h3>
+          <p>Sobrevive en la arena y demuestra tus habilidades.</p>
+          <button class="game-info-btn" type="button" aria-expanded="false">Ver información</button>
+          <div class="game-details" hidden>
+            <h4>Información de Free Fire</h4>
+            <p><strong>Género:</strong> Battle Royale.</p>
+            <p><strong>Plataforma:</strong> Dispositivos móviles.</p>
+            <p><strong>Dato curioso:</strong> Sus partidas están diseñadas para ser rápidas.</p>
+          </div>
+        </article>
+
+      </div>
+      <p id="noResults" class="empty-message" hidden>No encontramos ese videojuego. Intenta con otro nombre.</p>
+    </section>
+
+    <section class="store-section" id="tienda">
+      <div class="section-heading">
+        <span class="tag">NOVA PLAY STORE</span>
+        <h2>Equípate como un gamer</h2>
+        <p>Ropa, calzado y accesorios para llevar tu estilo más allá de la pantalla.</p>
+      </div>
+
+      <div class="store-tools">
+        <div class="store-filters" aria-label="Filtrar productos">
+          <button class="store-filter active" data-category="all" type="button">Todo</button>
+          <button class="store-filter" data-category="ropa" type="button">Ropa</button>
+          <button class="store-filter" data-category="calzado" type="button">Calzado</button>
+          <button class="store-filter" data-category="accesorios" type="button">Accesorios</button>
+          <button class="store-filter" data-category="teclados" type="button">Teclados</button>
+        </div>
+        <input type="search" id="productSearch" placeholder="Buscar productos..." aria-label="Buscar productos">
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <article class="product-card" data-category="ropa" data-name="hoodie novaplay gamer">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=700&auto=format&fit=crop" alt="Buzo hoodie oscuro" loading="lazy">
+            <span class="product-badge">NUEVO</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">ROPA</span>
+            <h3>Hoodie NovaPlay</h3>
+            <p class="product-price">$89.900 COP</p>
+            <button class="add-cart-btn" type="button" data-product="Hoodie NovaPlay" data-price="89900">＋ Agregar al carrito</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="calzado" data-name="tenis gamer urbanos">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&auto=format&fit=crop" alt="Tenis deportivos rojos" loading="lazy">
+            <span class="product-badge popular">POPULAR</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">CALZADO</span>
+            <h3>Tenis Gamer Urban</h3>
+            <p class="product-price">$159.900 COP</p>
+            <button class="add-cart-btn" type="button" data-product="Tenis Gamer Urban" data-price="159900">＋ Agregar al carrito</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="accesorios" data-name="audifonos novaplay rgb">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&auto=format&fit=crop" alt="Audífonos de diadema" loading="lazy">
+            <span class="product-badge offer">OFERTA</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">ACCESORIOS</span>
+            <h3>Audífonos NovaPlay</h3>
+            <p class="product-price">$119.900 COP</p>
+            <button class="add-cart-btn" type="button" data-product="Audífonos NovaPlay" data-price="119900">＋ Agregar al carrito</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="teclados" data-name="teclado mecanico gamer">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700" alt="Teclado mecánico gamer" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-category">TECLADOS</span>
+            <h3>Teclado Mecánico</h3>
+            <p class="product-price">$65.000 COP</p>
+            <button class="add-cart-btn" type="button" data-product="Teclado Mecánico" data-price="65000">＋ Agregar al carrito</button>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="productNoResults" class="empty-message" hidden>No encontramos productos con esa búsqueda.</p>
+      <div class="cart-summary" id="cartSummary" aria-live="polite">Tu carrito está vacío. ¡Explora los productos!</div>
+    </section>
+
+    <section class="tech-section" id="tecnologia">
+      <span class="tag">INNOVACIÓN Y FUTURO</span>
+      <h2>La tecnología no se detiene.</h2>
+      <p>Descubre tendencias, herramientas y avances que impulsan el mundo digital.</p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <a href="#inicio" class="logo">NOVA<span>PLAY</span></a>
+    <p>Tu universo gamer comienza aquí.</p>
+
+    <div class="footer-contact">
+      <h3>SÍGUENOS, CONÉCTATE CON NOVAPLAY</h3>
+
+      <h3>CONTÁCTANOS</h3>
+      <p>Correo: <a href="mailto:samueljativa15@gmail.com">samueljativa15@gmail.com</a></p>
+      <p>Número: <a href="tel:+573236726588">3236726588</a></p>
+
+      <h3>NUESTRAS PÁGINAS</h3>
+      <p>Facebook: Samuel David</p>
+      <p>I Love You Jóvenes Creativos</p>
+    </div>
+
+    <p class="copyright">© 2026 NovaPlay. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
 
+     
+                    
 
-            
-        
+                    
+                        
+                      
+
+                       
