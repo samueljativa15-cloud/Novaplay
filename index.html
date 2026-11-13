@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="NovaPlay: noticias, videojuegos y tecnología en un solo lugar.">
+
+    <title>NovaPlay | Tu universo gamer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                NOVA<span>PLAY</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#juegos">Videojuegos</a></li>
+                <li><a href="#tecnologia">Tecnología</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INICIO -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="tag">TU UNIVERSO GAMER</span>
+
+                <h1>
+                    EL GAMING<br>
+                    NUNCA SE DETIENE.
+                </h1>
+
+                <p>
+                    Descubre las últimas noticias, novedades
+                    y todo lo que mueve el mundo de los videojuegos
+                    y la tecnología.
+                </p>
+
+                <a href="#noticias" class="btn">
+                    EXPLORAR AHORA
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- NOTICIAS -->
+        <section class="section" id="noticias">
+
+            <div class="section-title">
+
+                <span>EL MUNDO GAMER EN UN SOLO LUGAR</span>
+
+                <h2>Últimas noticias</h2>
+
+                <p>
+                    Lo que está pasando en el mundo de los
+                    videojuegos y la tecnología.
+                </p>
+
+            </div>
+
+            <div class="news-filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    Todas
+                </button>
+
+                <button class="filter-btn" data-filter="gaming">
+                    Gaming
+                </button>
+
+                <button class="filter-btn" data-filter="videojuegos">
+                    Videojuegos
+                </button>
+
+                <button class="filter-btn" data-filter="tecnologia">
+                    Tecnología
+                </button>
+
+            </div>
+
+            <div class="news-grid">
+
+                <article class="news-card" data-category="gaming">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+                        alt="Competencia gamer"
+                    >
+
+                    <div class="card-content">
+
+                        <span class="category">GAMING</span>
+
+                        <h3>La comunidad gamer sigue creciendo</h3>
+
+                        <p>
+                            Los videojuegos competitivos siguen
+                            reuniendo jugadores de todo el mundo.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card" data-category="videojuegos">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800"
+                        alt="Consola de videojuegos"
+                    >
+
+                    <div class="card-content">
+
+                        <span class="category">VIDEOJUEGOS</span>
+
+                        <h3>Nuevas experiencias por descubrir</h3>
+
+                        <p>
+                            Cada videojuego ofrece una forma
+                            diferente de explorar y divertirse.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card" data-category="tecnologia">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800"
+                        alt="Innovación tecnológica"
+                    >
+
+                    <div class="card-content">
+
+                        <span class="category">TECNOLOGÍA</span>
+
+                        <h3>Innovación que transforma el futuro</h3>
+
+                        <p>
+                            La tecnología continúa cambiando
+                            nuestra manera de conectarnos.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="noNews" class="empty-message" hidden>
+                No hay noticias en esta categoría.
+            </p>
+
+        </section>
+
+        <!-- VIDEOJUEGOS -->
+        <section class="games-section" id="juegos">
+
+            <span class="tag">DESCUBRE TU PRÓXIMA AVENTURA</span>
+
+            <h2>Explora videojuegos</h2>
+
+            <p>
+                ¿No sabes a qué jugar? Explora algunos de los
+                títulos que están dando de qué hablar.
+            </p>
+
+            <div class="games-tools">
+
+                <input
+                    type="search"
+                    id="gameSearch"
+                    placeholder="Busca tu videojuego favorito..."
+                    aria-label="Buscar videojuegos"
+                >
+
+            </div>
+
+            <div class="games-grid" id="gamesGrid">
+
+                <article class="game-card">
+
+                    <span>AVENTURA</span>
+
+                    <h3>Minecraft</h3>
+
+                    <p>
+                        Construye, explora y crea tu propio mundo.
+                    </p>
+
+                </article>
+
+                <article class="game-card">
+
+                    <span>BATTLE ROYALE</span>
+
+                    <h3>Fortnite</h3>
+
+                    <p>
+                        Compite, construye y busca la victoria.
+                    </p>
+
+                </article>
+
+                <article class="game-card">
+
+                    <span>ACCIÓN</span>
+
+                    <h3>GTA V</h3>
+
+                    <p>
+                        Explora una ciudad llena de posibilidades.
+                    </p>
+
+                </article>
+
+                <article class="game-card">
+
+                    <span>COMPETITIVO</span>
+
+                    <h3>Valorant</h3>
+
+                    <p>
+                        Precisión, estrategia y trabajo en equipo.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <p id="noResults" class="empty-message" hidden>
+                No encontramos ese videojuego. Intenta con otro nombre.
+            </p>
+
+        </section>
+
+        <!-- TECNOLOGÍA -->
+        <section class="tech-section" id="tecnologia">
+
+            <span class="tag">INNOVACIÓN Y FUTURO</span>
+
+            <h2>La tecnología no se detiene.</h2>
+
+            <p>
+                Mantente al día con las tendencias,
+                innovaciones y avances tecnológicos.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <h2>NOVA<span>PLAY</span></h2>
+
+        <p>Tu universo gamer comienza aquí.</p>
+
+        <p class="copyright">
+            © 2026 NovaPlay. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <!-- CONEXIÓN JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+            
+        
